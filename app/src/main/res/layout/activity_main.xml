@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mk.manik.mydatabase.MainActivity">
+
+    <EditText
+        android:id="@+id/plain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/plain" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/plain"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="68dp"
+        android:onClick="saveButtonClicked"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:onClick="deleteButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveButton"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:text="@string/delete" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deleteButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="Manik's Database"
+        android:textColor="#00f"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/saveButton"
+        android:layout_below="@+id/saveButton"
+        android:layout_marginTop="8dp"
+        android:width="300dp"
+        android:height="300dp"
+        android:text="No Data Yet "
+        android:textColor="#ae00"
+        android:textSize="20sp" />
+
+</RelativeLayout>
